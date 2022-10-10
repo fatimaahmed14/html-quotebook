@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header" 70px
+    "empty1 main empty2" 1fr /
+    1fr 700px 1fr;
+}
+
+.main{
+    grid-area: main;
+}
+
+.empty1{
+    grid-area: empty1;
+}
+
+.empty2{
+    grid-area: empty2;
+}
+
+.quotes{
+    display: grid;
+    grid-template-rows: auto;
+}
